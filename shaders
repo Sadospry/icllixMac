@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Prompt the user for confirmation
+read -p "License key (4 day free trial soon)  :  " response
+
+# Check the user's response
+if [ "$response" = "SPAC_TEST_1284" ]; then
+    echo "Please wait until icllixMac Shaders is done. If you need get in contact at @sadosprey@gmail.com or @Chinhooks_DT on Roblox.com or @synthen_s on Discord."
+else
+    echo "Command 'Shaders' cannot be executed. Please get a valid license key or get help @sadosprey@gmail.com or @Chinhooks_DR on Roblox.com or even @synthen_s on Discord."
+fi
