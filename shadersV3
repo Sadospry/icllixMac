@@ -4,5 +4,5 @@ read -p "License key (4 day free trial soon)  :  " response
 if [ "$response" = "SPAC_TEST_1284" ]; then
     echo "Please wait until icllixMac Shaders is done. If you need get in contact at @sadosprey@gmail.com or @Chinhooks_DT on Roblox.com or @synthen_s on Discord."
 else
-echo "Incorrect license key or an error occured."
+echo "Incorrect license key or an error occured.  $CMDR%2"
 fi
