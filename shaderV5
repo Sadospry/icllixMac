@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Define the license key and the trial file path
+LICENSE_KEY="B4C9W-7D3A5-JK8Q2-R6M1T"
+TRIAL_FILE="/tmp/free_trial_used"
+
+# Function to display the license prompt and process the input
+process_license() {
+    echo -n "License key (or 4 day free trial) : "
+    read user_input
+    
+      #  if [ -z "$user_input" ]; then
+
+        if [ -e "$user_input" ]; then
+            echo "You've already activated the 4 day free trial."
+        else
+            touch "$TRIAL_FILE"
+            echo "4 day free trial activated."
+        fi
+    elif [ "$user_input" == "$LICENSE_KEY" ]; then
+        echo "License key correct. Please wait until icllixMac Roblox Shaders are done."
+    else
+        echo "Invalid license key or trial input."
+    fi
+}
+
+# Execute the function
+process_license
