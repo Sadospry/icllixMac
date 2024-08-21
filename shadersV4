@@ -1,0 +1,9 @@
+#!/bin/bash
+read -p "License key (free trial soon) : -" response
+
+if [ "$response" = "B4C9W-7D3A5-JK8Q2-R6M1T" ]; then
+# test code
+    echo "Please wait until icllixMac Shaders is done."
+else
+echo "Incorrect license key or an error occured."
+fi
